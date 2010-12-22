@@ -1,0 +1,7 @@
+s(1,2).
+s(2,3).
+s(3,4).
+s(4,5).
+
+greater(X, Y) :- s(Y, X).
+greater(X, Y) :- s(Y, Y1), greater(X, Y1).
