@@ -17,7 +17,7 @@ class Project(info: ProjectInfo) extends DefaultProject(info) with ProguardProje
   log.setLevel(Level.Warn)
 
   //program entry point
-  // override def mainClass: Option[String] = Some("")
+  override def mainClass: Option[String] = Some("COM.sootNsmoke.oolong.Oolong")
 
   //compiler options
   override def compileOptions = Deprecation :: Unchecked :: Nil //ExplainTypes
