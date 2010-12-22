@@ -24,9 +24,9 @@ class Project(info: ProjectInfo) extends DefaultProject(info) with ProguardProje
 
   //scaladoc options
   override def documentOptions =
-    LinkSource ::
+    // LinkSource :: //not supported in scaladoc 2
+    // windowTitle(name + " " + version + " API") ::
     documentTitle(name + " " + version + " API") ::
-    windowTitle(name + " " + version + " API") ::
     Nil
 
   //proguard
