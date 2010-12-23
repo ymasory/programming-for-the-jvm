@@ -1,5 +1,6 @@
 This GitHub repo is derived from code located at 
 <http://scifac.ru.ac.za/resourcekit/download/index.htm>.
+It is Joshua Engel's original code with a small bug fix by P.D. Terry.
 
 The project is compiled with sbt
 <http://code.google.com/p/simple-build-tool/>.

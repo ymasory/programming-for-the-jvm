@@ -16,6 +16,11 @@ import java.io.*;
  * Also: this code is designed to be compatible with JDK 1.0,
  * so there are some depracated nasty things
  */
+
+/* Slight modification by Pat Terry (p.terry@ru.ac.za) - marked as "pdt"
+   to allow for \t and \n to be correctly processed in strings
+ */
+
 class Lexer // extends StreamTokenizer
 {
     boolean pushedBack = false;
@@ -160,7 +165,7 @@ class Lexer // extends StreamTokenizer
                             c = nextChar();
                             if(c == 'n')
                                 sb.append('\n');
-                            if(c == 't')
+                            else if(c == 't')       // pdt
                                 sb.append('\t');
                             else
                                 sb.append(c);
